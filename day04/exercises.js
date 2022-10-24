@@ -6,9 +6,10 @@
 // 	alert(`You are left with ${18 - age} years to drive`);
 
 //grades
+//сase не проверяет выражения, только конкретные значения
 let grade = Number(prompt("Enter your grade:"));
 switch (grade) {
-	case (grade >= 80 && grade <= 100):
+	case 80:
 		alert('A');
 		break;
 	case (grade >= 70 && grade <= 79):
