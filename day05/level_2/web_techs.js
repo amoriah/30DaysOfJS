@@ -1,0 +1,1 @@
+let webTechs = ['HTML', 'CSS', 'JS', 'React', 'Python', 'C', 'C++'];

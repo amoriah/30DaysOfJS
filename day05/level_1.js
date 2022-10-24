@@ -1,3 +1,5 @@
+//--------------level_1------------------------------------------------
+
 let arr = [];
 let arr1 = [1,2,3,4,5,6,7];
 // console.log(arr1.length);
@@ -46,5 +48,20 @@ let last2 = itCompanies.length - 1;
 // let a = itCompanies.splice(0, 3);
 // console.log(itCompanies.splice(0, 3));
 
-let a = itCompanies.slice(-1, 1)
-console.log(a);
+// let a = itCompanies.slice(-3, itCompanies.length);
+// console.log(a);
+
+// let a = itCompanies.slice(itCompanies.length/2 - 1, itCompanies.length/2 + 1);
+// console.log(a);
+
+// itCompanies.shift();
+// console.log(itCompanies)
+
+// itCompanies.splice(itCompanies.length/2, 1);
+// console.log(itCompanies)
+
+// itCompanies.pop();
+// console.log(itCompanies)
+
+// itCompanies.splice(0);
+// console.log(itCompanies);
