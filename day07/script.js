@@ -140,13 +140,46 @@ function sumAll(...args){
 //--------------------------------------------------------------------------------
 
 function randomUserIp(){
-	return Math.round(Math.random() * 100);
 }
 
 // console.log(randomUserIp());
 //---------------------------------------------------------------------------------
 function randomMacAddress(){
-	
+	const hex = '0123456789ABCDEF';
+	let adress = '';
+	for (let j = 0; j < 6; j++){
+		for (let i = 0; i < 2; i++)
+		adress += hex[Math.floor(Math.random() * hex.length)];
+		if (j == 5)
+		break;
+		adress += '-';
+	}
+	return adress;	
 }
 
-console.log(randomMacAddress());
+// console.log(randomMacAddress());
+//----------------------------------------------------------------------------------
+function randomHexaNumberGenerator(){
+	const hex = '0123456789ABCDEF';
+	let num = '';
+	for(let i = 0; i < 6; i++)
+	num += hex[Math.floor(Math.random() * hex.length)];
+	return '#' + num;
+}
+
+// console.log(randomHexaNumberGenerator());
+//----------------------------------------------------------------------------------
+function userIdGenerator(){
+	return`${(~~(Math.random()*1e8)).toString(16)}`;
+}
+
+// console.log(userIdGenerator());
+//----------------------------------------------------------------------------------
+function userIdGeneratedByUser(){
+	let countChar = prompt('enter count of character:');
+	let countId = prompt('enter count of id:');
+	for (let i = 0; i < countId; i++)
+		console.log(`${(~~(Math.random() *1e8)).toString(16)}`);
+}
+
+userIdGeneratedByUser();
